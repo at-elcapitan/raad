@@ -49,7 +49,7 @@ def main():
     if not admin:
         admin = ask_admin()
 
-    cmd = ["sudo", "-u", admin] + args
+    cmd = ["sudo", "-u", admin, "sudo"] + args
 
     try:
         subprocess.run(cmd)
